@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+body{
+    text-align: center;
+}
+
+.contents{
+    font-size: 80px;
+}
+
+/* 1. font-family : 18 font-family-values; */
+#web_development_content{
+    font-family: sans-serif;
+}
+
+/*
+2. Google Fonts
+    2.1 <link>
+    2.2 @import
+*/
+
+#core_java_content{
+    font-family: "Fontdiner Swanky", cursive;
+}
+
+#core_python_content{
+    font-family: "DynaPuff", cursive;
+}
+
+#merry_christmas_content{
+    font-family: "Mountains of Christmas", cursive;
+}

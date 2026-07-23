@@ -1,0 +1,90 @@
+/*
+1.simple selectors
+    1.1.universal selector(*)
+    1.2.element selector(tagname)
+    1.3.id selector(#)
+    1.4.class selector(.)
+    1.5.group selector(,)
+*/
+
+/* 1.1.universal selector(*) */
+*{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+/* 1.2.element selector(tagname) */
+span{
+    font-size: 65px;
+}
+
+button{
+    height: 75px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+/* 1.3.id selector(#) */
+#subscribe_button{
+    width: 250px;
+    background-color: red;
+    border-radius: 37.5px;
+}
+
+#follow_button{
+    width: 200px;
+    background-color: royalblue;
+    border-radius: 15px;
+}
+
+/* 1.4.class selector(.) */
+.navy_texts{
+    color: navy;
+}
+
+.lightgray_background_color_texts{
+    background-color: lightgray;
+    border: 1px solid navy;
+}
+
+.red_texts{
+    color: red;
+}
+
+/*
+1.5.group selector(,)
+element_one,
+element_two,
+element_three{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+
+#id_value_one,
+#id_value_two,
+#id_value_three{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+
+.class_value_one,
+.class_value_two,
+.class_value_three{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+
+element,
+#id_value,
+.class_value{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+*/
+
+q,
+i,
+b{
+    color: orange;
+}

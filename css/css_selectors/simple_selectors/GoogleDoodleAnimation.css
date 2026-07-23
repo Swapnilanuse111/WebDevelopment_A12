@@ -1,0 +1,57 @@
+/* select all the class */
+
+
+
+@font-face {
+    font-family: google-sans;
+    src: url(../../../assets/fonts/Google_sans_Flex.ttf);
+}
+
+
+
+.marko{
+    height: 350px;
+    width: 150px;
+    
+}
+   
+
+
+* {
+    font-size: 200px;
+    font-family: google-sans;
+    
+}
+
+
+
+#G,#g{
+    color: royalblue;
+
+
+}
+
+
+
+#O{
+    color: red;
+
+}
+
+
+#o{
+
+    color:yellowgreen
+}
+
+
+
+#l{
+color: green;
+}
+
+
+#e{
+    color: red;
+
+}
