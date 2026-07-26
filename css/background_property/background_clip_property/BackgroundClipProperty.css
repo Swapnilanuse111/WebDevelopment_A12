@@ -1,0 +1,23 @@
+*{
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+.clippable_contents{
+    font-size: 200px;
+    font-weight: bold;
+}
+#instagram_color_gradient_content{
+    background-image: linear-gradient(to right,blue,magenta,red,orange,yellow);
+    background-clip: text;
+    color: transparent;
+}
+#earth_image_content{
+    background-image: url(../../../assets/images/Earth.png);
+    background-size: 120%;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+}

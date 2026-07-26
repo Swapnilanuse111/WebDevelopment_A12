@@ -1,0 +1,40 @@
+/*
+2.1.background-image: linear-gradient();
+2.2.background-image: radial-gradient();
+2.3.background-image: conic-gradient();
+2.4.background-image: url(relative-file-path);
+3.background-size: width height;
+4.background-repeat: repeat-values;
+5.background-position: position-values;
+*/
+.color_gradient_blocks{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 5px solid black;
+}
+#linear_gradient_block{
+    background-image: linear-gradient(to bottom right,orange,white,green);
+}
+#radial_gradient_block{
+    background-image: radial-gradient(circle at bottom left,violet,indigo,blue,green,orange,yellow,red);
+}
+#conic_gradient_block{
+    background-image: conic-gradient(violet,indigo,blue,green,yellow,orange,red);
+}
+#basket_ball_image_container{
+    width: 500px;
+    height: 500px;
+    float: right;
+    background-color: hsl(30deg,100%,90%);
+    background-image: url(../../../assets/images/BasketBall.jpeg);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    /* background-position shorthand property */
+    background-position: 10% 10%;
+    /* background-position specific property */
+    background-position-x: 10%;
+    background-position-y: 10%;
+    background
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinator Selectors</title>
+    <link rel="stylesheet" href="CombinatorSelectors.css">
+</head>
+<body>
+
+    <!-- Parent and Child -->
+    <div id="orange_color_block">
+        <div id="gray_color_block"></div>
+    </div>
+
+    <br>
+
+    <!-- Descendant -->
+    <div id="grand_father_block">
+
+        <div id="father_block" class="half_dimensioned_blocks">
+
+            <div id="child_block" class="half_dimensioned_blocks">
+
+                <div id="grand_child_block" class="half_dimensioned_blocks"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <!-- Adjacent & General Sibling -->
+    <div id="color_blocks_container">
+
+        <div class="color_blocks" id="green_color_block"></div>
+        <div class="color_blocks" id="white_color_block"></div>
+        <div class="color_blocks" id="red_color_block"></div>
+        <div class="color_blocks" id="navy_color_block"></div>
+        <div class="color_blocks" id="lightgray_color_block"></div>
+
+    </div>
+
+</body>
+</html>

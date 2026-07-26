@@ -1,0 +1,126 @@
+/* ==========================
+   COMBINATOR SELECTORS
+========================== */
+
+
+/*-------------------------
+  Parent & Child
+-------------------------*/
+
+#orange_color_block{
+    width:200px;
+    height:200px;
+    background:orange;
+    cursor:pointer;
+}
+
+#gray_color_block{
+    width:50%;
+    height:50%;
+    background:gray;
+}
+
+/* Child Selector (>) */
+
+#orange_color_block:hover > #gray_color_block{
+    background:black;
+}
+
+
+/*-------------------------
+  Descendant Selector
+-------------------------*/
+
+#grand_father_block{
+    width:200px;
+    height:200px;
+    background:gray;
+    cursor:pointer;
+}
+
+.half_dimensioned_blocks{
+    width:50%;
+    height:50%;
+}
+
+#father_block{
+    background:greenyellow;
+}
+
+#child_block{
+    background:gray;
+}
+
+#grand_child_block{
+    background:greenyellow;
+}
+
+/* Descendant Selector (space) */
+
+#grand_father_block:hover #child_block{
+    background:black;
+}
+
+#father_block:hover #grand_child_block{
+    background:gray;
+}
+
+
+/*-------------------------
+  Color Blocks
+-------------------------*/
+
+#color_blocks_container{
+    width:520px;
+    height:100px;
+}
+
+.color_blocks{
+    width:100px;
+    height:100px;
+    float:left;
+    cursor:pointer;
+}
+
+#green_color_block{
+    background:green;
+}
+
+#white_color_block{
+    background:white;
+}
+
+#red_color_block{
+    background:red;
+}
+
+#navy_color_block{
+    background:navy;
+}
+
+#lightgray_color_block{
+    background:lightgray;
+}
+
+
+/*-------------------------
+  Adjacent Sibling (+)
+-------------------------*/
+
+#green_color_block:hover + #white_color_block{
+    border:3px solid black;
+    box-sizing:border-box;
+}
+
+
+/*-------------------------
+  General Sibling (~)
+-------------------------*/
+
+#green_color_block:hover ~ #navy_color_block{
+    background:lightgray;
+}
+
+#green_color_block:hover ~ #lightgray_color_block{
+    background:navy;
+}

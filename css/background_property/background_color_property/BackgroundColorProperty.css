@@ -1,0 +1,20 @@
+/* 1.background-color: color-value; */
+#color_block{
+    width: 100px;
+    height: 100px;
+    /* color name */
+    background-color: teal;
+    background-color: peachpuff;
+    /* rgb color value */
+    background-color: rgb(0,128,128);
+    /* rgb color value with alpha value */
+    background-color: rgba(0,0,0,0.10);
+    /* hexadecimal color value */
+    background-color: #008080;
+    /* hexadecimal color value with alpha value */
+    background-color: #00808048;
+    /* hsl color value */
+    background-color: hsl(30deg,100%,90%);
+    /* hsl color value with alpha value */
+    background-color: hsla(30deg,100%,50%,0.25);
+}
