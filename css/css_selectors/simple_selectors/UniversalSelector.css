@@ -1,0 +1,13 @@
+/* 
+1. Universal Selector (*)
+        The Universal Selector selects every HTML element on the page.
+
+*/
+
+*{
+   text-align: center;
+   font-size: 75px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: pink;
+   
+}

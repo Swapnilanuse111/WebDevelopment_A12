@@ -1,0 +1,30 @@
+.row{
+    display:flex;
+    align-items:center;
+    margin:20px 0;
+}
+
+.country{
+    width:120px;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.bar{
+    height:45px;
+}
+
+.india{
+    width:85%;
+    background:red;
+}
+
+.china{
+    width:78%;
+    background:orange;
+}
+
+.usa{
+    width:25%;
+    background:green;
+}

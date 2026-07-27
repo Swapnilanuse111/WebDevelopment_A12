@@ -1,0 +1,11 @@
+/* 1.element selector is a type of selector which slect the elemt using tag name */
+div {
+    color: red;
+}
+h1{
+    background-color: green;
+    
+}
+#multiple_block_element{
+    background-color: red;
+}

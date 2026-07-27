@@ -1,0 +1,46 @@
+.All_Boreder_properties_container{
+    width: 2000px;
+    height: 200px;
+    
+}
+.Border_properties{
+    float:left;
+    height: 180px;
+    width: 189px;
+    border-width: 25px;
+    color: black;
+    
+}
+#solid{
+    border-style: solid;
+   
+}
+#dashed{
+    border-style: dashed;
+}
+#dotted{
+     border-style: dotted;
+}
+#doubble{
+     border-style:double;
+}
+#grove{
+    border-style: groove;
+    border-color: black;
+}
+#right{
+    border-style: ridge;
+    border-color: black;
+}
+#inset{
+    border-style: inset;
+    border-color: black;
+}
+#outset{
+    border-style: outset;
+    border-color: black;
+}
+#box{
+    border-style: solid dashed dotted double;
+    border:color(srgb red green blue) 
+}
