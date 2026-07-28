@@ -1,0 +1,30 @@
+*{
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../../assets/fonts/ProductSansRegular.ttf);
+}
+#topic_heading{
+    font-size: 50px;
+}
+#circular_bordered_radius_block{
+    width: 150px;
+    height: 150px;
+    background-color: navy;
+    /* specific edge border-radius specific properties */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-radius shorthand property */
+    border-radius: 10px;
+    border-radius: 10px 50px;
+    border-radius: 10px 30px 50px 70px;
+}
+#square_to_circular_block{
+    width: 100px;
+    height: 100px;
+    border: 30px solid navy;
+    border-radius: 50%;
+}

@@ -1,0 +1,53 @@
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../../assets/fonts/ProductSansRegular.ttf);
+}
+#topic_heading{
+    font-size: 50px;
+    font-family: ProductSans;
+}
+#doctor_content{
+    color: navy;
+}
+#capsules_content{
+    color: gray;
+}
+/* first doctor capsule */
+#doctor_capsules_container{
+    width: 300px;
+    height: 150px;
+}
+.doctor_capsules{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#navy_capsule{
+    background-color: navy;
+    border-radius: 50% 0% 0% 50%;
+}
+#gray_capsule{
+    background-color: gray;
+    border-radius: 0% 50% 50% 0%;
+}
+/* second doctor capsule */
+#navy_parent_capsule{
+    width: 300px;
+    height: 150px;
+    background-color: navy;
+    border-radius: 75px;
+}
+#gray_child_capsule{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: gray;
+    border-radius: 0% 50% 50% 0%;
+}
+/* third doctor capsule */
+#doctor_capsule{
+    width: 300px;
+    height: 150px;
+    background-image: linear-gradient(to right,navy 50%,gray 50%);
+    border-radius: 75px;
+}

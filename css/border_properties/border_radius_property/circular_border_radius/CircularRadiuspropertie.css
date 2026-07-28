@@ -1,0 +1,23 @@
+@font-face{
+    font-family: ProductSans;
+     src: url("../../../assets/ProductSans.ttf") format("truetype");
+}
+body {
+    font-family: "ProductSans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+#border{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 20% 30% ;
+}
+#circle{
+    border-radius: 50%;
+    border: solid;
+    width: 150px;
+    height: 150px;
+    color: navy;
+    border-width: 45px;
+}

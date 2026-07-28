@@ -1,0 +1,21 @@
+#lotus_flower_petals_container{
+    width: 634px;
+    height: 634px;
+}
+.lotus_flower_petals{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.top_petals{
+    background-image: linear-gradient(pink,purple);
+}
+.bottom_petals{
+    background-image: linear-gradient(purple,pink);
+}
+#first_petal,#fourth_petal{
+    border-radius: 0% 100%;
+}
+#second_petal,#third_petal{
+    border-radius: 100% 0%;
+}
