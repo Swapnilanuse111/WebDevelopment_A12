@@ -1,0 +1,39 @@
+*{
+    margin-left: 15px;
+}
+#all_box_sizeing_content{
+    height: 500px;
+    width: 500px;
+    border: solid 10px;
+    margin: 15px;   
+    margin-left: 15px;
+}
+.box_model{
+    width: 200px;
+    height: 200px;
+    
+}
+#earth_image_element{
+    height: 250px;
+    width: 250px;
+}
+#heading{
+    border: solid 2px;
+    font-weight: bold;
+    width:fit-content;
+    border:groove black 15px;
+}
+#button_element{
+    border-radius: 5px;
+    border: none;
+    background-color: navy;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 29px;
+    margin: 15px;
+
+}
+#earth_image_element{
+    border: groove 20px black;
+}
