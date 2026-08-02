@@ -47,3 +47,32 @@ body{
     color: navy;
     background-color: lightgray;
 }
+#color_box_container{
+    width: 1200px;
+    height: 120px;
+    background-color: gray;
+    margin: 10px;
+}
+.color_box{
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+}
+#color_box_container:hover > .color_box{
+   background-color: navy;
+}
+#color_box_container:hover > .color_box:first-child {
+    background-color: pink;
+    border-radius: 20px;
+}
+#color_box_container:hover > .color_box:last-child{
+    background-color: aqua;
+    border-radius: 30px;
+}
+#color_box_container:hover > .color_box:nth-child(2) {
+    background-color: yellow;
+    border-radius: 40px;
+}
