@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    margin: 30px;
+}
+#css_form_validation_heading{
+    font-size: 45px;
+    text-align: center;
+}
+#css_content{
+    color: navy;
+}
+#validation_content{
+    color: gray;
+}
+#css_validation_form{
+    width: 650px;
+    padding: 10px;
+    background-color: rgb(235,235,235);
+    border-radius: 15px;
+    margin: 10px auto;
+}
+.input_field_tools_container{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(190,190,190);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.input_fields{
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 2px;
+    background-color: transparent;
+}
+.input_fields_labels{
+    font-size: 20px;
+    color: navy;
+}
+.gender_radio_button_contents,.skills_set_checkbox_contents{
+    font-size: 25px;
+    margin-right: 10px;
+}
+/*
+attribute selector
+element-selector[attribute-name="attribute-value"]{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+*/
+input[type="radio"],input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#validate_button{
+    font-size: 35px;
+    font-weight: bold;
+    outline: none;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: navy;
+    cursor: pointer;
+}
+#validate_button:active{
+    color: navy;
+    background-color: lightgray;
+}
+/* pseudo-class selectors */
+.input_fields:valid{
+    color: black;
+}
+.input_fields:invalid{
+    color: red;
+}
+input[type="radio"]:checked,input[type="checkbox"]:checked{
+    transform: scale(1.250);
+}

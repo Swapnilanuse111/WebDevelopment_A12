@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSFormValidation</title>
+    <link rel="stylesheet" href="CSSFormValidation.css">
+</head>
+<body>
+    <h1 id="css_form_validation_heading">
+        <span class="css_form_validation_heading_tools" id="css_content">CSS</span>
+        <span class="css_form_validation_heading_tools" id="form_content">Form</span>
+        <span class="css_form_validation_heading_tools" id="validation_content">Validation</span>
+    </h1>
+    <form action="" id="css_validation_form">
+        <div id="username_input_field_tools_container" class="input_field_tools_container">
+            <label for="" class="input_fields_labels">Username</label>
+            <br/>
+            <input type="text" name="username" id="username_input_field" class="input_fields" minlength="3" maxlength="">
+        </div>
+        <div id="password_input_field_tools_container" class="input_field_tools_container">
+            <label for="" class="input_fields_labels">Password</label>
+            <br/>
+            <input type="password" name="password" id="password_input_field" class="input_fields" minlength="8" maxlength="18">
+        </div>
+        <div id="age_input_field_tools_container" class="input_field_tools_container">
+            <label for="" class="input_fields_labels">IASEligibilityAge</label>
+            <br/>
+            <input type="number" name="age" id="age_input_field" class="input_fields" min="21" max="32">
+        </div>
+        <div id="radio_button_input_field_tools_container" class="input_field_tools_container">
+            <label for="" class="input_fields_labels">Gender</label>
+            <br/>
+            <input type="radio" name="gender" id="male_radio_button" value="Male"> <span class="gender_radio_button_contents">Male</span>
+            <input type="radio" name="gender" id="female_radio_button" value="Female"> <span class="gender_radio_button_contents">Female</span>
+            <input type="radio" name="gender" id="trans_gender_radio_button" value="TransGender"> <span class="gender_radio_button_contents">TransGender</span>
+            <input type="radio" name="gender" id="trans_women_radio_button" value="TransWomen"> <span class="gender_radio_button_contents">TransWomen</span>
+        </div>
+        <div id="skills_set_input_field_tools_container" class="input_field_tools_container">
+            <label for="" class="input_fields_labels">SkillsSet</label>
+            <br/>
+            <input type="checkbox" name="skills_set" id="html_checkbox" value="HTML"> <span class="skills_set_checkbox_contents">HTML</span>
+            <input type="checkbox" name="skills_set" id="css_checkbox" value="CSS"> <span class="skills_set_checkbox_contents">CSS</span>
+            <input type="checkbox" name="skills_set" id="java_script_checkbox" value="JavaScript"> <span class="skills_set_checkbox_contents">JavaScript</span>
+            <input type="checkbox" name="skills_set" id="react_java_script_checkbox" value="ReactJavaScript"> <span class="skills_set_checkbox_contents">ReactJavaScript</span>
+        </div>
+        <input type="submit" value="Validate" id="validate_button">
+    </form>
+</body>
+</html>
