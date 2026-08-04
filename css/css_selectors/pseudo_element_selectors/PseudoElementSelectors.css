@@ -1,0 +1,146 @@
+/*
+pseudo-class selectors syntax:
+selector:pseudo-class selector{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+pseudo-element selectors syntax:
+selector::pseudo-element selector{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+1.placeholder
+2.before
+3.after
+4.first-line
+5.first-letter
+6.selection
+7.marker
+8.-webkit-scrollbar
+9.-webkit-scrollbar-thumb
+10.-webkit-scrollbar-button
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    margin: 30px;
+}
+.input_fields{
+    font-size: 35px;
+    font-weight: bold;
+    outline: none;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: navy;
+    background-color: lightgray;
+}
+.input_fields::placeholder{
+    color: navy;
+}
+.course_headings{
+    font-size: 45px;
+    cursor: pointer;
+}
+.course_headings::before,.course_headings::after{
+    color: navy;
+}
+#core_java_heading:hover::before{
+    content: "Core";
+}
+#web_development_heading:hover::after{
+    content: "Development";
+}
+#web_development_description{
+    font-size: 20px;
+}
+#web_development_description::first-line{
+    color: navy;
+}
+#web_development_description::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+#web_development_description::selection{
+    color: rgb(20,20,20);
+    background-color: orange;
+}
+#qspiders_heading{
+    font-size: 50px;
+}
+#qspiders_heading::first-letter{
+    color: orange;
+}
+#java_full_stack_list_heading,#snacks_items_list_heading{
+    font-size: 45px;
+    margin-top: 20px;
+}
+.java_full_stack_list_items,.snacks_items_list_items{
+    font-size: 25px;
+}
+.java_full_stack_list_items::marker{
+    color: orange;
+    font-weight: bold;
+}
+.snacks_items_list_items{
+    list-style-type: none;
+}
+#pop_corn_snacks_item::marker{
+    content: "🍿";
+}
+#burger_snacks_item::marker{
+    content: "🍔";
+}
+#snacks_items_list,#java_full_stack_list{
+    margin-left: 25px;
+}
+/* space[solar system] scroll bar */
+/* body::-webkit-scrollbar{
+    width: 50px;
+    background-image: url(../../../assets/images/Space.png);
+    background-size: 75%;
+}
+body::-webkit-scrollbar-thumb{
+    background-image: url(../../../assets/images/Sun.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+body::-webkit-scrollbar-button{
+    height: 50px;
+    background-image: url(../../../assets/images/Earth.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+body::-webkit-scrollbar-button:active{
+    background-image: url(../../../assets/images/Moon.png);
+} */
+/* professional scroll bar */
+body::-webkit-scrollbar{
+    width: 20px;
+    background-color: rgb(245,245,245);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 50px;
+    cursor: pointer;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: darkgray;
+}
+body::-webkit-scrollbar-button{
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
