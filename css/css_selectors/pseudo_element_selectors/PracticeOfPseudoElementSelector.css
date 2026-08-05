@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSans.ttf);
+}
+body{
+    margin: 30px;
+}
+.input_feilds{
+    font-size: 35px;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: navy;
+    background-color: lightgray;
+}
+.input_feilds::placeholder{
+    color: navy;
+}
+.course_headings{
+    font-size: ;
+}
