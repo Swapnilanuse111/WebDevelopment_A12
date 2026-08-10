@@ -1,0 +1,45 @@
+
+*{
+    box-sizing: border-box;
+}
+#login_Form_container{
+ width: 700px;
+ height: 400px;
+ background-image:url(../../assets/images/freefireloginpage.jpeg);
+ text-align: center;
+ margin-left: 600px;
+
+}
+#lable_contaaint{
+    margin-top: 20px;
+}
+#login_info_user{
+    width: 250px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: lightpink;
+}
+#user_password_information{
+    width: 250px;
+    background-color:lightpink;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#Login_button_content{
+    background-color: navy;
+    color: white;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+
+}
+#login_Form_container:hover {
+    background-image: url(../../assets/images/ff.jpeg);
+    transition: background-position 10s ease;
+    background-size: cover;
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cycle_containt_contener {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    background-color: lightgray;
+}
+
+
+/* VEHICLES */
+
+.vehicals_race {
+    width: 100px;
+    height: 120px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100px;
+
+    /* Transition */
+    
+}
+
+
+/* VEHICLE IMAGES */
+
+#images_containt1 {
+    background-image: url("../../assets/images/cycle.png");
+    transition: transform 2s ease;
+}
+
+#images_containt2 {
+    background-image: url("../../assets/images/truck\ \(1\).png");
+    transition: transform 5s ease;
+}
+
+#images_containt3 {
+    background-image: url("../../assets/images/jcb.png");
+    transition: transform 7s ease;
+}
+
+#images_containt4 {
+    background-image: url("../../assets/images/truck.png");
+    transition: transform 10s ease;
+}
+
+
+/* BOTTOM LINE */
+
+#race_line {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* 
+   When the line is hovered,
+   move ALL vehicles to right
+*/
+
+#cycle_containt_contener:has(#race_line:hover) .vehicals_race {
+    transform: translateX(1750px);
+}
