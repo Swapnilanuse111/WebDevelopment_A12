@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+    
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSans.ttf);
+}
+.login_form_content{
+    width: 1000px;
+    border: 10px solid black;
+    margin-left: 400px;
+    height: 930px;
+    
+}
+.form_containt{
+    font-size: 30px;
+    font-family: ProductSans;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+#title_login_page{
+    text-align: center;
+    color: red;
+}
+#user_name_text{
+font-size: 30px;
+}
+#button{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    color: navy;
+}
