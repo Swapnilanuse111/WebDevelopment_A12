@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 350px;
+    width: 350px;
+    background-color: red;
+    transition-timing-function: ease-in;
+}
+.container:hover{
+    margin-left: 40px;
+    transition-duration: 4s;
+    cursor: pointer;
+    transition-delay: 1.5s;
+
+}
+
+#text_para{
+    color: white;
+    font-size: 25px;
+}
+#text_para:hover{
+    color: navy;
+}
+.button_containet{
+    height: 50px;
+    width: 80px;
+    outline: none;
+    border: 1px solid pink;
+    margin-top: 10px;
+    margin-left: 90px;
+    
+}
+.button_containet:hover{
+    background-color: navy;
+    color: white;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    
+}
