@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f2f2f2;
+}
+
+.main_container {
+    height: 600px;
+    width: 600px;
+    background-color: aqua;
+    border: 5px solid black;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 20px;
+
+    cursor: pointer;
+
+    transition: all 3s;
+}
+#image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 3s;
+}
+
+#name {
+    margin-top: 50px;
+
+    font-size: 25px;
+    color: navy;
+
+    transition: all 3s;
+}
+#speclization {
+    margin-top: 10px;
+
+    font-size: 30px;
+    color: magenta;
+}
+
+#skills {
+    margin-top: 20px;
+
+    color: red;
+    font-size: 20px;
+}
+#contact {
+    margin-top: 30px;
+
+    padding: 10px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+
+    transition: all 3s;
+}
+/* =========================
+   MAIN CONTAINER HOVER
+   ========================= */
+
+.main_container:hover {
+    height: 800px;
+    width: 800px;
+    background-color: pink;
+}
+/* Parent hover → Image changes */
+
+.main_container:hover #image {
+    height: 300px;
+    width: 300px;
+
+    border-radius: 30px;
+}
+/* Parent hover → Name changes */
+
+.main_container:hover #name {
+    color: blue;
+}
+/* Parent hover → Contact changes */
+
+.main_container:hover #contact {
+    background-color: green;
+}
