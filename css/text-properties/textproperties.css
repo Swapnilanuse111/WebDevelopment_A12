@@ -1,0 +1,40 @@
+/* text Propeties */
+
+/* 
+1.color
+2.text-align
+3.text-decoration: underline,overline ,line-through,none;
+4.text-transform: uppercase,lowercase,Captitlized
+5.line-height:
+6.letter-spacing
+7.word-spacing
+8.text-shadow:x-axis y-axis opacity color
+*/
+
+
+
+h1{
+    text-align: center;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+/* h1{
+    text-transform: uppercase ;
+} */
+/* p{
+    line-height: 200px;
+} */
+/* 
+p{
+ letter-spacing: 20px;   
+} */
+
+p{
+    word-spacing: 10px;
+}
+h1{
+    text-shadow: 20px 20px 10px red;
+}
