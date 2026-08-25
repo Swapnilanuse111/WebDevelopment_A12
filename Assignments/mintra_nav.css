@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 80px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Logo */
+#ABC {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+#ABC img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #282c3f;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 0 14px;
+    border-bottom: 3px solid transparent;
+}
+
+.section:hover {
+    border-bottom: 3px solid #ff3f6c;
+    color: #ff3f6c;
+}
+
+.studio {
+    position: relative;
+}
+
+.new-badge {
+    background-color: #ff3f6c;
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+    vertical-align: super;
+}
+
+/* Search box */
+.search-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 420px;
+    margin: 0 30px;
+    background-color: #f5f5f6;
+    border-radius: 4px;
+    padding: 0 14px;
+    height: 42px;
+}
+
+.search-box i {
+    color: #94969f;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.ser {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #282c3f;
+}
+
+.ser::placeholder {
+    color: #94969f;
+}
+
+/* Right icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+}
+
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 11px;
+    font-weight: 600;
+    gap: 4px;
+}
+
+.icon-link i {
+    font-size: 18px;
+}
+
+.icon-link:hover {
+    color: #ff3f6c;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .nav-links {
+        gap: 2px;
+    }
+    .section {
+        padding: 0 8px;
+        font-size: 12px;
+    }
+    .search-box {
+        margin: 0 15px;
+    }
+    .icon-link span {
+        display: none;
+    }
+}
