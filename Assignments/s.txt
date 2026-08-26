@@ -1,0 +1,7 @@
+
+                    <div class="promo-text">
+                        <span class="Text_content">HandBags</span>
+                        <span class="Text_content" id="Discount">Min 60% Off</span>
+                        <span class="Text_content" id="Line">__________</span>
+                        <span class="Text_content" id="explore">+Explore</span>
+                    </div>

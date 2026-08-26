@@ -5,12 +5,17 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+@font-face {
+    font-family: ProductSans;
+    src: url(../assets/fonts/ProductSans.ttf);
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
-    height: 80px;
+    height: 100px;
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -129,7 +134,7 @@
     color: #ff3f6c;
 }
 
-/* Responsive */
+/* Responsive navbar */
 @media (max-width: 1000px) {
     .nav-links {
         gap: 2px;
@@ -144,4 +149,204 @@
     .icon-link span {
         display: none;
     }
+}
+
+/* ============================
+   PROMO SECTION
+   ============================ */
+
+.promo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+/* First banner: image with overlaid text, using flex + relative positioning
+   instead of fixed pixel margins so it scales on any screen */
+.product_containt {
+    position: relative;
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.product_containt img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Text overlay sits on top of the image, aligned with flexbox instead of
+   a hardcoded margin-left: 1650px */
+.promo-text {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    z-index: 2;
+    /* keeps text readable no matter what the image looks like underneath */
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.Text_content {
+    font-family: ProductSans, 'Gill Sans', sans-serif;
+    font-size: clamp(24px, 4vw, 60px);
+    line-height: 1.2;
+    color: inherit;
+}
+
+#Discount {
+    font-size: clamp(18px, 2.5vw, 40px);
+    margin-top: 10px;
+}
+
+#Line {
+    margin: 20px 0;
+    filter: blur(2px);
+    opacity: 0.9;
+}
+
+#explore {
+    font-size: clamp(14px, 1.5vw, 24px);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding-bottom: 4px;
+}
+
+#explore:hover {
+    color: #ffdede;
+}
+
+/* Optional dark gradient behind the text so it stays legible even on
+   light/busy parts of the image */
+.product_containt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25));
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Credit card offer strip */
+.The_Next_Add {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 20px;
+    border: 1px solid navy;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+.line {
+    width: 1px;
+    height: 100px;
+    background-color: black;
+    flex-shrink: 0;
+}
+
+.discount_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#Discount_text1 {
+    font-family: ProductSans, 'Gill Sans', sans-serif;
+    font-weight: bold;
+    font-size: clamp(20px, 3vw, 50px);
+}
+
+#Discount_text2 {
+    font-weight: bold;
+    font-size: clamp(14px, 1.8vw, 30px);
+}
+
+.Creadit_card_image,
+#Creadit_card_image,
+#Creadit_card_image2 {
+    height: 100px;
+    width: auto;
+    max-width: 200px;
+}
+
+/* Responsive promo section */
+@media (max-width: 800px) {
+    .promo-text {
+        right: 20px;
+        align-items: flex-end;
+    }
+
+    .The_Next_Add {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+    }
+
+    .discount_text {
+        align-items: center;
+    }
+}
+#shope_by_catogary{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+.Product_Main_Container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.products {
+    width: 617px;
+    height: 617px;
+
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.products img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.Text_containt1{
+    font-family: ProductSans;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 800px;
+}
+.Text_containt2{
+    font-family: ProductSans;
+    font-weight: bold;
+}
+.Text_containt3{
+    font-family: ProductSans;
+    font-weight: bold;
+}
+.A{
+    background-color: red;
 }
