@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main_container{
+    height: 900px;
+    width: 1900px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    border: 3px solid black;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../assets/fonts/ProductSans.ttf);
+}
+.profiles{
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#flex{
+        margin-top: 280px;
+        margin-left: 70px;
+}
+.ProfilePic1{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-left: 90px;
+}
+.Name1{
+    margin-left: 100px;
+    color: magenta;
+    margin-bottom: 5px;
+}
+.Id1{
+     margin-left: 120px;
+     color: aqua;
+     margin-bottom: 8px;
+}
+.Link1{
+    margin-left: 130px;
+    color: blue;
+}
+#flex1{
+    background-color: bisque;
+}
+#Ethon{
+    background-color: rgb(188, 243, 133);
+}
+#Emma{
+    background-color: rgb(255, 225, 0);
+}
+#Johan{
+    background-color: rgb(212, 66, 43);
+}
+#Flex11{
+    background-color: greenyellow;
+}
+#Sam{
+    background-color: powderblue;
+}
