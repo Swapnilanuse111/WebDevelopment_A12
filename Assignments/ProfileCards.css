@@ -2,20 +2,46 @@
     margin: 0px;
     padding: 0px;
 }
-.main_container{
-    height: 900px;
-    width: 1900px;
-    display: flex;
-    justify-content: center;
+.main_container {
+    min-height: 900px;
+    width: 100%;              /* Take full screen width */
     display: grid;
-    grid-template-columns: repeat(3,1fr);   
+    grid-template-columns: repeat(3, 1fr);
     border: 3px solid black;
     font-family: ProductSans;
+    gap: 20px;
+    padding: 20px;
 }
+
 @font-face {
     font-family: ProductSans;
     src: url(../assets/fonts/ProductSans.ttf);
 }
+
+.top_row_flex {
+    display: flex;
+    gap: 20px;
+    grid-column: 1 / -1;   
+}
+
+.top_row_flex .profiles {
+    flex: 1;               
+}
+
+.top_row_flex .profiles:nth-child(2) {
+    flex: 0 0 400px;       
+}
+.top_row_flex .profiles:nth-child(4) {
+    flex: 0 0 400px;       
+}
+.top_row_flex .profiles:nth-child(6) {
+    flex: 0 0 400px;       
+}
+
+.top_row_flex #Sam {
+    flex: 1;               
+}
+
 .profiles{
     margin: 20px;
     height: 400px;
@@ -49,9 +75,11 @@
 }
 #flex1{
     background-color: bisque;
+    
 }
 #Ethon{
     background-color: rgb(188, 243, 133);
+  
 }
 #Emma{
     background-color: rgb(255, 225, 0);
