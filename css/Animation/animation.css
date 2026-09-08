@@ -1,0 +1,54 @@
+/* @keyframes anime{
+    from{
+        margin-left: 0px;
+        background-color: yellow;
+    }
+    to{
+        margin-left: 400px;
+        background-color: purple;
+    }
+} */
+@keyframes MyAnimation {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: aqua;
+    }
+
+    25% {
+        top: 0px;
+        left: 400px;
+        background-color: magenta;
+    }
+
+    50% {
+        top: 400px;
+        left: 400px;
+        background-color: navy;
+    }
+
+    75% {
+        top: 400px;
+        left: 0px;
+        background-color: greenyellow;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: aqua;
+    }
+}
+
+.Main_container {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border: 1px solid black;
+
+    position: relative;
+
+    animation-name: MyAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}

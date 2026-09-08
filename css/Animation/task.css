@@ -1,0 +1,20 @@
+@keyframes MyAnimation{
+    from{
+        border: 0px solid blueviolet;        
+    }
+    to{
+        border: 5px solid rgb(218, 244, 135);
+    }
+}
+.Main_container{
+height: 150px;
+    width: 150px;
+    margin-left: 900px;
+    margin-top: 400px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    animation-name: MyAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}

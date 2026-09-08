@@ -1,0 +1,94 @@
+java script is not provide functionality
+
+front End->
+
+
+COMPANY-
+ECMA-EROPIAN COMPUTER MANUFACTURING AORGNIZATION
+------>THEY ARE GIVING STANDERD TO THE JS 
+------>
+ES-ECMA SCRIPT
+
+ES-6 FEATURES(let,count,arrow,function,promesis)
+IS STANDER OF JS 
+FROM ES-6 JS GOT POPULARITY
+
+
+
+
+#JS IS ECECUTED In Two Envorment/Places
+--1]client side(Broweser)[react,angular]
+--2]server-side(Node(serverside envarment))[Express]
+
+To Connect Both by using Next Js
+
+*js is also used for database also
+
+
+**What Is JavaScript?
+---->js is scripting language which is used to provide dynamacity 
+     it supoort oops and used to automate the task
+
+What Is Scripting Language?
+---->it is a subset of programing language[it is uses interpriters]
+
+all scripting language is programing lanugage
+
+
+
+comple time?
+Run Time ?
+
+
+.Js Is Only Have Runtime
+<----------------Features Of Js------------------>
+1]Dynamicaly Typed Language
+------>Where Ur Datatype Detect On Runtime
+        eg-let a=10
+            letter I will Give 
+                a="String"
+                a=[list]
+
+2]Synchronous
+--->By Defalt js Is Synchronous[Synchronous Means Bloking In Nature]
+unless and until 
+
+
+3]Asynchronous
+--->
+
+
+
+
+
+
+*+varibles:-
+
+1]var varible in introduces befor ES-6
+Using the var we are 
+----Duplicate Varible Is Override of previous varible 
+
+
+2]let varible
+        ---->Redeclaration is not possible with let varible
+let a
+
+3]const -
+        it is used to declare and innitilize in single point
+        -If We Are Provide the varible as Const one U Declare then the modification is not possible
+
+
+
+Declaration
+Initillization
+pre-declareation
+
+
+
+
+
+
+***
+
+
+log(a)---->hosting(var a)
