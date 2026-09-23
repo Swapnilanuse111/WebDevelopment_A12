@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+#Ashok_chakra_image_contaner{
+    height: 250px;
+    width: 250px;
+    background-image: url(../../assets/images/BasketBall.jpeg);
+    background-size: 100%;
+    margin: 335px auto;
+    cursor: pointer;
+
+}
+#Ashok_chakra_image_contaner:hover{
+    box-shadow: 15px 0px 0px 0px orange;
+}

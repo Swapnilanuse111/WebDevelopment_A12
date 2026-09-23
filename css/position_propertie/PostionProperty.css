@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 30px;
+}
+#normal_postion_container{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+
+    /* position: static;    By Default Every Html Elemet Has A Static Postion*/
+     position: relative;
+     bottom: 20px;
+     right: 20px;
+     border-radius: 25px;
+}
+
+#nay_color_container{
+    height: 300px;
+    width: 300px;
+    background-color: navy;
+    border-radius: 24px;
+    position: relative;
+}
+#light_gray_container{
+    height: 100px;
+    width: 100px;
+    background-color: lightgray;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
