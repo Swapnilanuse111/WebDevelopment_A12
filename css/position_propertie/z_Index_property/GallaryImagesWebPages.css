@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: face;
+}
+
+@font-face {
+    font-family: face;
+    src: url(../../../assets/fonts/ProductSans.ttf);
+}
+
+.nav_bars {
+    height: 70px;
+    width: 100%;
+    background-color: lightgray;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(241, 188, 241);
+    box-shadow: inset 0px 0px 15px magenta;
+    border-radius: 20px;
+}
+
+.image_container {
+    height: 880px;
+    width: 100%;
+    background-color: white;
+    background-size: cover;
+    position: sticky;
+   
+}   
+#first_image_container{
+    background-image: url(../../../assets/images/freefireposition.jpg);
+    
+}
+#second_image_container{
+    background-image: url(../../../assets/images/tiger.jpg);
+}
+#third_image_container{
+    background-image: url(../../../assets/images/mountainnn.jpg);
+}
+#fourth_image_container{
+    background-image: url(../../../assets/images/wheat.jpg);
+}
+#fifth_image_container{
+    background-image: url(../../../assets/images/cricket.jpg);
+}
+#sixth_image_container{
+    background-image: url(../../../assets/images/freefireposition.jpg);
+}
+#seventh_image_container{
+    background-image: url(../../../assets/images/freefireposition.jpg);
+}
