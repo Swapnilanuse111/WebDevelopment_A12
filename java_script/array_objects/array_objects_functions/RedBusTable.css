@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    margin: 25px;
+}
+#red_bus_table{
+    width: 100%;
+    height: fit-content;
+}
+#red_bus_table_caption{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+#red_bus_table_head{
+    color: white;
+    font-size: 30px;
+    background-color: black;
+}
+.red_bus_table_head_cells{
+    padding: 5px;
+}
+#red_bus_table_body{
+    font-size: 25px;
+    text-align: center;
+}
