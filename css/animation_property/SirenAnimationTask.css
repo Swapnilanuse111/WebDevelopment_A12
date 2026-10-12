@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#siren_blocks_container{
+    width: 950px;
+    height: 325px;
+    position: relative;
+    /* offset properties */
+    top: 162.5px;
+    left: 165px;
+}
+.siren_blocks{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 85px;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-play-state: running;
+}
+#red_siren_block{
+    animation-name: animateRedSirenBlock;
+}
+#blue_siren_block{
+    /* offset properties */
+    right: 0px;
+    animation-name: animateBlueSirenBlock;
+}
+/* animation logics */
+@keyframes animateRedSirenBlock{
+    /* first keyframe */
+    from{
+        background-color: red;
+        box-shadow: 0px 0px 100px red,0px 0px 300px red,0px 0px 500px red,0px 0px 700px red,0px 0px 900px red,0px 0px 1100px red;
+    }
+    /* last keyframe */
+    to{
+        background-color: transparent;
+    }
+}
+@keyframes animateBlueSirenBlock{
+    /* first keyframe */
+    from{
+        background-color: transparent;
+    }
+    /* last keyframe */
+    to{
+        background-color: blue;
+        box-shadow: 0px 0px 100px blue,0px 0px 300px blue,0px 0px 500px blue,0px 0px 700px blue,0px 0px 900px blue,0px 0px 1100px blue;
+    }
+}

@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#samsung_loaders_container{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    /* offset proeprties */
+    top: 150px;
+    left: 465px;
+    animation: animateSamsungLoadersContainer 2500ms linear infinite normal both;
+}
+.samsung_loaders{
+    width: 50%;
+    height: 50%;
+    float: left;
+    border-radius: 50%;
+    /* animation specific properties */
+    animation-name: animateSamsungLoaders;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    /* animation shorthand property */
+    animation: animateSamsungLoaders 750ms ease-in-out infinite alternate both;
+}
+.lightgray_samsung_loaders{
+    background-color: lightgray;
+}
+.navy_samsung_loaders{
+    background-color: navy;
+}
+/* animation logics */
+@keyframes animateSamsungLoaders{
+    /* first keyframe */
+    from{
+        transform: scale(0.5);
+    }
+    /* last keyframe */
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes animateSamsungLoadersContainer{
+    /* first keyframe */
+    from{
+        transform: rotate(0deg);
+    }
+    /* last keyframe */
+    to{
+        transform: rotate(360deg);
+    }
+}

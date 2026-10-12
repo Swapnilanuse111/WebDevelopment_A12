@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* default codes */
+#color_block{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    border-radius: 25px;
+    position: relative;
+    /* offset properties */
+    top: 275px;
+    left: 590px;
+    cursor: pointer;
+}
+#color_block:hover{
+    animation-name: animateColorBlock;
+    animation-duration: 10000ms;
+    animation-timing-function: linear;
+    animation-delay: 5000ms;
+    /*
+    animation-fill-mode: none;
+    none is the default value and none will control the animation effect code filling from 'default codes' to 'from codes' to 'to codes' and to 'default codes'
+    */
+    animation-fill-mode: none;
+    /*
+    animation-fill-mode: forwards;
+    forwards will control the animation effect code filling from 'default codes' to 'from codes' and to 'to codes'
+    */
+    animation-fill-mode: forwards;
+    /*
+    animation-fill-mode: backwards;
+    backwards will control the animation effect code filling from 'from codes' to 'to codes' and to 'default codes'
+    */
+    animation-fill-mode: backwards;
+    /*
+    animation-fill-mode: both;
+    both will control the animation effect code filling from 'from codes' and to 'to codes'
+    */
+    animation-fill-mode: both;
+}
+/* animation logics */
+@keyframes animateColorBlock{
+    /* first keyframe */
+    from{
+        background-color: orange;
+        transform: scale(2);
+    }
+    /* second keyframe */
+    50%{
+        background-color: yellow;
+        transform: scale(0);
+    }
+    /* last keyframe */
+    to{
+        background-color: navy;
+        transform: scale(2);
+    }
+}

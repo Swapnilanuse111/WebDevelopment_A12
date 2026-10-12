@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#toggle_animation_circular_block{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    /* offset properties */
+    bottom: -15px;
+    left: -100px;
+    cursor: pointer;
+}
+#google_doodles_container{
+    width: 500px;
+    height: 190px;
+    position: relative;
+    /* offset properties */
+    top: 220px;
+    left: 390px;
+}
+.google_doodles{
+    font-size: 150px;
+    font-weight: bold;
+    float: left;
+}
+.royal_blue_doodles{
+    color: royalblue;
+}
+.red_doodles{
+    color: red;
+}
+#toggle_animation_circular_block:hover+#g_one_doodle{
+    animation: animateGOneDoodle 1000ms ease-in-out infinite normal both;
+}
+#toggle_animation_circular_block:hover~#o_one_doodle{
+    animation: animateOOneDoodle 500ms ease-out infinite normal both;
+}
+#toggle_animation_circular_block:hover~#o_two_doodle{
+    animation: animateOTwoDoodle 35000ms ease-in-out infinite normal both;
+}
+#toggle_animation_circular_block:hover~#g_two_doodle{
+    animation: animateGTwoDoodle 500ms linear infinite alternate both;
+}
+#toggle_animation_circular_block:hover~#e_doodle{
+    animation: animateEDoodle 500ms linear infinite alternate-reverse both;
+}
+#toggle_animation_circular_block:hover~#l_doodle{
+    animation: animateLDoodle 500ms ease-in-out infinite alternate both;
+}
+#o_two_doodle{
+    color: orange;
+}
+#l_doodle{
+    color: green;
+}
+#e_doodle{
+    transform: rotateZ(-20deg);
+    position: relative;
+    /* offset properties */
+    left: -5px;
+}
+/* animation logics */
+@keyframes animateGOneDoodle{
+    /* first,last keyframe */
+    from,to{
+        transform: translate(0px,0px) rotateX(0deg);
+    }
+    /* second frame */
+    25%{
+        transform: translate(0px,-100px) rotateX(360deg);
+    }
+    /* third keyframe */
+    50%{
+        transform: translate(0px,100px);
+    }
+    /* fourth keyframe */
+    75%{
+        transform: translate(-100px,0px);
+    }
+}
+@keyframes animateOOneDoodle{
+    /* first,last keyframe */
+    from,to{
+        transform: translate(0px,150px) rotateY(0deg);
+    }
+    /* second keyframe */
+    50%{
+        transform: translate(0px,-150px) rotateY(360deg) scale(2);
+    }
+}
+@keyframes animateOTwoDoodle{
+    /* first,last keyframe */
+    from,to{
+        transform: skew(0deg,0deg);
+    }
+    /* second keyframe */
+    50%{
+        transform: skew(360deg,360deg);
+    }
+}
+@keyframes animateGTwoDoodle{
+    /* first keyframe */
+    from{
+        transform: scale(1.250);
+    }
+    /* last keyframe */
+    to{
+        transform: scale(0.750);
+    }
+}
+@keyframes animateEDoodle{
+    /* first keyframe */
+    from{
+        transform: scale(1.250) rotateZ(-20deg);
+    }
+    /* last keyframe */
+    to{
+        transform: scale(0.750) rotateZ(-20deg);
+    }
+}
+@keyframes animateLDoodle{
+    /* first,last keyframe */
+    from,to{
+        transform: translate(0px,150px) rotate(0deg);
+    }
+    50%{
+        transform: translate(0px,-200px) rotate(360deg) scale(3);
+    }
+}

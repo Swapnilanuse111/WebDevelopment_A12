@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    margin: 20px;
+    overflow: hidden;
+}
+#web_development_heading{
+    font-size: 50px;
+    animation-name: animateWebDevelopmentHeading;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /*
+    animation-direction: normal;
+    normal is the default value and normal will control the animation effect direction from 'from state' to 'to state' and because of animation is over, animation effect will flicker
+    */
+    animation-direction: normal;
+    /*
+    animation-direction: reverse;
+    reverse will control the animation effect direction from 'to state' to 'from state' and because of animation is over, animation effect will flicker
+    */
+    animation-direction: reverse;
+    /*
+    animation-direction: alternate;
+    alternate will control the animation effect direction from 'from state' to 'to state' and even animation is over, animation effect will not flicker
+    */
+    animation-direction: alternate;
+    /*
+    animation-direction: alternate-reverse;
+    alternate-reverse will control the animation effect direction from 'to state' to 'from state' and even animation is over, animation effect will not flicker
+    */
+    animation-direction: alternate-reverse;
+}
+/* animation logics */
+@keyframes animateWebDevelopmentHeading{
+    /* first keyframe */
+    from{
+        transform: translateX(-50%);
+    }
+    /* last keyframe */
+    to{
+        transform: translate(27.50%);
+        font-size: 75px;
+    }
+}

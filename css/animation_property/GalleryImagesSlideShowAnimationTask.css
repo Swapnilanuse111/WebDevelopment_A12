@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#gallery_images_heading{
+    font-size: 100px;
+    color: chocolate;
+    text-shadow: 3px 3px 1px black;
+    position: relative;
+    /* offset properties */
+    top: 50px;
+    text-align: center;
+}
+#gallery_images_slide_show_container{
+    width: 400px;
+    height: 250px;
+    background-image: url(../../assets/images/Forest.jpg);
+    background-size: 100% 100%;
+    border-radius: 50px;
+    position: relative;
+    /* offset properties */
+    top: 100px;
+    left: 440px;
+    cursor: pointer;
+}
+#gallery_images_slide_show_container:hover{
+    animation-name: animateGalleryImagesSlideShowContainer;
+    animation-duration: 5000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+/* animation logics */
+@keyframes animateGalleryImagesSlideShowContainer{
+    /* first keyframe */
+    10%{
+        background-image: url(../../assets/images/Glaciers.jpg);
+    }
+    /* second keyframe */
+    16.66%{
+        background-image: url(../../assets/images/GreenMountain.jpg);
+    }
+    /* third keyframe */
+    33.32%{
+        background-image: url(../../assets/images/MountHimalayas.jpg);
+    }
+    /* fourth keyframe */
+    49.98%{
+        background-image: url(../../assets/images/Parachute.jpg);
+    }
+    /* fifth keyframe */
+    66.64%{
+        background-image: url(../../assets/images/OceanFishes.jpg);
+    }
+    /* sixth keyframe */
+    83.30%{
+        background-image: url(../../assets/images/Nature.jpg);
+    }
+    /* seventh keyframe */
+    90%{
+        background-image: url(../../assets/images/Tiger.jpg);
+    }
+}

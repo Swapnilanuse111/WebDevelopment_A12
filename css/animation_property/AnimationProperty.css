@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#color_block{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#color_block:hover{
+    animation-name: animateColorBlock;
+    animation-duration: 950ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+}
+/* animation logics */
+@keyframes animateColorBlock{
+    /* first key-frame */
+    0%{
+        transform: translate(0px,0px);
+        background-color: orange;
+    }
+    /* second key-frame */
+    25%{
+        transform: translate(0px,550px) scale(0);
+        background-color: gray;
+    }
+    /* third key-frame */
+    50%{
+        transform: translate(275px,275px) scale(3);
+        background-color: navy;
+    }
+    /* fourth key-frame */
+    75%{
+        transform: translate(550px,550px) scale(0);
+        background-color: gray;
+    }
+    /* last key-frame */
+    100%{
+        transform: translate(550px,0px);
+        background-color: orange;
+    }
+}
