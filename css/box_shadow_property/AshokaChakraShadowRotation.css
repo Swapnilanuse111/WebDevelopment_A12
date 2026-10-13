@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#ashoka_chakra_image_container{
+    width: 350px;
+    height: 350px;
+    background-image: url(../../assets/images/AshokaChakra.png);
+    border-radius: 50%;
+    background-size: 100%;
+    margin: 150px auto;
+    transition: all 2000ms ease-in-out;
+    cursor: pointer;
+}
+#ashoka_chakra_image_container:hover{
+    box-shadow: 0px -30px 15px orange,-30px 30px 15px white,-30px 30px 15px black,30px 30px 15px green;
+    transform: scale(1.250) rotate(720deg);
+}
