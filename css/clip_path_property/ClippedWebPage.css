@@ -1,0 +1,86 @@
+/* common codes */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    background-color: lightgray;
+}
+/* clipped web page landscape responsive codes */
+@media screen and (orientation:landscape){
+    #clipped_web_page_header_container{
+        width: 100vw;
+        height: 60vh;
+        background-color: purple;
+        position: absolute;
+        clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 100%);
+    }
+    #tapered_clipped_web_page_heading{
+        color: white;
+        font-size: 65px;
+        position: relative;
+        /* offset properties */
+        top: 225px;
+        text-align: center;
+    }
+    #clipped_web_page_navigation_bar{
+        width: 100vw;
+        height: 10vh;
+        padding-right: 20px;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 15px;
+        align-items: center;
+        z-index: 3;
+    }
+    .clipped_web_page_navigation_bar_hyperlinks{
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    #greeting_card_blocks_container{
+        width: 100vw;
+        height: 40vh;
+        position: relative;
+        /* offset proeprties */
+        top: 60vh;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .greeting_card_blocks{
+        width: 250px;
+        height: 220px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .color_blocks{
+        width: 85%;
+        height: 75%;
+        border-radius: 20px;
+    }
+    #lightblue_color_block{
+        background-color: lightblue;
+    }
+    #lightpink_color_block{
+        background-color: lightpink;
+    }
+    #lightorange_color_block{
+        background-color: peachpuff;
+    }
+}

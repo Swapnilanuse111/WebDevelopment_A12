@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    margin: 20px;
+}
+#polygon_shapes_container{
+    width: 100%;
+    padding: 10px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.polygon_shapes{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+#triangle_shape{
+    clip-path: polygon(50% 0%,100% 100%,0% 100%);
+}
+#trapezium_shape{
+    clip-path: polygon(20% 0%,80% 0%,100% 100%,0% 100%);
+}
+#diamond_shape{
+    clip-path: polygon(0% 50%,50% 0%,100% 50%,50% 100%);
+}
+#kite_shape{
+    height: 150px;
+    clip-path: polygon(0% 30%,50% 0%,100% 30%,50% 100%);
+}
