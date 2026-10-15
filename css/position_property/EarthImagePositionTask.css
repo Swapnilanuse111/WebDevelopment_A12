@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#earth_image_fieldset{
+    width: 350px;
+    height: 350px;
+    background-image: url(../../assets/images/Earth.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    border: 5px solid navy;
+    position: relative;
+    /* offset properties */
+    top: 150px;
+    left: 465px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+#earth_image_fieldset:hover{
+    background-size: 37.5%;
+    background-position: 50% 25px;
+    border: 5px solid black;
+}
+#earth_image_fieldset:hover>#earth_image_fieldset_legend{
+    text-align: center;
+    margin-left: 0%;
+    color: black;
+}
+#earth_image_fieldset_legend{
+    font-size: 50px;
+    font-weight: bold;
+    color: navy;
+    margin-left: 5%;
+}
+.earth_tools{
+    position: relative;
+    /* offset properties */
+    top: 40%;
+    color: transparent;
+    transition: all 500ms ease-in-out;
+}
+#earth_heading{
+    font-size: 45px;
+    text-align: center;
+}
+#earth_description{
+    font-size: 18px;
+    text-align: justify;
+}
+#earth_image_fieldset:hover>.earth_tools{
+    color: black;
+}

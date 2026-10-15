@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    margin: 15px;
+}
+#gallery_span{
+    color: navy;
+}
+#images_span{
+    color: gray;
+}
+#gallery_images_heading{
+    font-size: 50px;
+    color: purple;
+    text-align: center;
+}
+.gallery_images{
+    width: 200px;
+    height: 120px;
+    border-radius: 35px;
+    transform: skew(-30deg);
+    position: absolute;
+    cursor: pointer;
+    transition: transform 750ms linear;
+}
+#gallery_images_container{
+    width: 650px;
+    height: 120px;
+    position: absolute;
+    /* offset properties */
+    bottom: 15px;
+    left: 315px;
+}
+#glaciers_image{
+    /* offset properties */
+    left: 64.28px;
+}
+#green_mountain_image{
+    /* offset properties */
+    left: 128.56px;
+}
+#mount_himalayas_image{
+    /* offset properties */
+    left: 192.84px;
+}
+#parachute_image{
+    /* offset properties */
+    left: 257.12px;
+}
+#ocean_fishes_image{
+    /* offset properties */
+    left: 321.40px;
+}
+#nature_image{
+    /* offset properties */
+    left: 385.68px;
+}
+#tiger_image{
+    /* offset properties */
+    left: 449.96px;
+}
+#forest_image:hover{
+    transform: skew(0deg) translate(245px,-281px) rotateY(360deg) scale(3.50);
+}
+#glaciers_image:hover{
+    transform: skew(0deg) translate(180px,-281px) rotateY(360deg) scale(3.50);
+}
+#green_mountain_image:hover{
+    transform: skew(0deg) translate(115px,-281px) rotateY(360deg) scale(3.50);
+}
+#mount_himalayas_image:hover{
+    transform: skew(0deg) translate(50px,-281px) rotateY(360deg) scale(3.50);
+}
+#parachute_image:hover{
+    transform: skew(0deg) translate(-15px,-281px) rotateY(360deg) scale(3.50);
+}
+#ocean_fishes_image:hover{
+    transform: skew(0deg) translate(-78px,-281px) rotateY(360deg) scale(3.50);
+}
+#nature_image:hover{
+    transform: skew(0deg) translate(-143px,-281px) rotateY(360deg) scale(3.50);
+}
+#tiger_image:hover{
+    transform: skew(0deg) translate(-205px,-281px) rotateY(360deg) scale(3.50);
+}

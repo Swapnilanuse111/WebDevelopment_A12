@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#shoe_image_container{
+    width: 350px;
+    height: 350px;
+    background-color: lightgray;
+    border-radius: 35%;
+    position: relative;
+    /* offset properties */
+    top: 150px;
+    left: 465px;
+    cursor: pointer;
+}
+#shoe_image_container:hover{
+    box-shadow: 0px 0px 10px gray,0px 0px 20px gray;
+}
+#shoe_image{
+    width: 90%;
+    position: absolute;
+    /* offset properties */
+    top: 25%;
+    left: 5%;
+    transition: transform 500ms ease-in-out;
+}
+#shoe_image_container:hover>#shoe_image{
+    transform: translate(-95%,-75%) rotate(-90deg) scale(2);
+}
+#shoe_name{
+    font-size: 40px;
+}
+#shoe_price{
+    font-size: 35px;
+}
+#shoe_description{
+    width: 85%;
+    font-size: 20px;
+}
+.shoe_tools{
+    color: transparent;
+    position: relative;
+    /* offset properties */
+    top: 30%;
+    left: 15%;
+    transition: color 250ms ease-in-out 125ms;
+}
+#shoe_image_container:hover>.shoe_tools{
+    color: black;
+}
