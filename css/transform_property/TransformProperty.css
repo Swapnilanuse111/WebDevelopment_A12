@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#color_blocks_container{
+    width: 300px;
+    height: 100px;
+    margin: 265px auto;
+    border-bottom: 10px solid black;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.color_blocks{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#navy_color_block{
+    background-color: navy;
+}
+#lightgray_color_block{
+    background-color: lightgray;
+}
+#black_color_block{
+    background-color: black;
+}
+#color_blocks_container:hover>.color_blocks{
+    transition: transform 500ms ease-in-out;
+}
+/*
+1.rotate functions
+1.1.rotateX(x-axis-angle)
+1.2.rotateY(y-axis-angle)
+1.3.rotateZ(z-axis-angle)
+1.4.rotate(angle)
+*/
+#color_blocks_container:hover>#navy_color_block{
+    transform: rotateX(360deg);
+}
+#color_blocks_container:hover>#lightgray_color_block{
+    transform: rotateY(360deg);
+}
+#color_blocks_container:hover>#black_color_block{
+    transform: rotateZ(360deg);
+    transform: rotate(360deg);
+}
+/*
+2.skew functions
+2.1.skewX(x-axis-angle)
+2.2.skewY(y-axis-angle)
+2.3.skew(x-axis-angle,y-axis-angle)
+*/
+#color_blocks_container:hover>#navy_color_block{
+    transform: skewX(360deg);
+}
+#color_blocks_container:hover>#lightgray_color_block{
+    transform: skewY(360deg);
+}
+#color_blocks_container:hover>#black_color_block{
+    transform: skew(360deg,360deg);
+}
+/*
+3.scale functions
+3.1.scaleX(x-axis-scaling-factor)
+3.2.scaleY(y-axis-scaling-factor)
+3.3.scale(x-axis-scaling-factor,y-axis-scaling-factor)
+*/
+#color_blocks_container:hover>#navy_color_block{
+    transform: scaleX(2);
+}
+#color_blocks_container:hover>#lightgray_color_block{
+    transform: scaleY(2);
+}
+#color_blocks_container:hover>#black_color_block{
+    transform: scale(2);
+}
+/*
+4.translate functions
+4.1.translateX(x-axis-co-ordinates)
+4.2.translateY(y-axis-co-ordinates)
+4.3.translate(x-axis-co-ordinates,y-axis-co-ordinates)
+*/
+#color_blocks_container:hover>#navy_color_block{
+    transform: translateX(-100px);
+}
+#color_blocks_container:hover>#lightgray_color_block{
+    transform: translateY(-100px);
+}
+#color_blocks_container:hover>#black_color_block{
+    transform: translate(100px,0px);
+}
