@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 30px;
+}
+.vehicle_images{
+    width: 200px;
+    transition: margin-left 10000ms;
+}
+#vehicle_images_container{
+    border-bottom: 30px solid black;
+    cursor: pointer;
+}
+#vehicle_images_container:hover>.vehicle_images{
+    margin-left: 84.5%;
+}
+#cycle_image{
+    transition-timing-function: ease;
+}
+#bike_image{
+    transition-timing-function: ease-in;
+    transition-delay: 2000ms;
+}
+#car_image{
+    transition-timing-function: ease-in-out;
+    transition-delay: 7000ms;
+}
+#lorry_image{
+    transition-timing-function: ease-out;
+    transition-delay: 11000ms;
+}
+#buldozer_image{
+    transition-timing-function: linear;
+    transition-delay: 13000ms;
+}

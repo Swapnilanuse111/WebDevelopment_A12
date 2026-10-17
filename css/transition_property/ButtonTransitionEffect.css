@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    margin: 30px;
+}
+#click_here_button{
+    font-size: 150px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-image: linear-gradient(to right,lightgray,navy);
+    background-size: 200%;
+    background-position: left;
+    /* transition specific properties */
+    transition-property: background-position,color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    /* transition-delay: 250ms; */
+    /* transition shorthand property */
+    transition: all 500ms ease-in-out;
+}
+#click_here_button:hover{
+    color: white;
+    background-position: right;
+}
