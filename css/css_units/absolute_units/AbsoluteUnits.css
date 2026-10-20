@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#pixel_unit_block{
+    width: 100px;
+    height: 100px;
+    background-color: navy;
+}
+#centimeter_unit_block{
+    width: 1cm;
+    height: 1cm;
+    background-color: orange;
+}
+#millimeter_unit_block{
+    width: 10mm;
+    height: 10mm;
+    background-color: magenta;
+}
+#inch_unit_block{
+    width: 1in;
+    height: 1in;
+    background-color: teal;
+}
+#point_unit_block{
+    width: 10pt;
+    height: 10pt;
+    background-color: red;
+}
+#picas_unit_block{
+    width: 10pc;
+    height: 2pc;
+    background-color: orange;
+}
