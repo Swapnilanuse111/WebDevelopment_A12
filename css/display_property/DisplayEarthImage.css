@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    padding: 15px;
+}
+#display_earth_button{
+    font-size: 35px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: royalblue;
+    cursor: pointer;
+    position: absolute;
+}
+#earth_image{
+    width: 150px;
+    position: relative;
+    /* offset properties */
+    top: 225px;
+    left: 565px;
+    display: none;
+}
+#display_earth_button:hover~#earth_image{
+    display: inline-block;
+    animation: animateEarthImage 50000ms linear 1500ms infinite normal both;
+}
+/* animation logics */
+@keyframes animateEarthImage{
+    /* first keyframe */
+    from{
+        transform: rotateZ(0deg);
+    }
+    /* last keyframe */
+    to{
+        transform: rotateZ(360deg);
+    }
+}

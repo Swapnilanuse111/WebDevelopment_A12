@@ -1,0 +1,100 @@
+/* common codes */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+#tacobell_header_container,#tacobell_navigation_bar{
+    text-shadow: 1px 1px 1px black;
+}
+#tacobell_header_container{
+    font-size: 35px;
+    font-weight: bold;
+    width: 100vw;
+    height: 12vh;
+    color: white;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#tacobell_navigation_bar{
+    font-weight: bold;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.25);
+    padding: 5px 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.tacobell_navigation_bar_hyperlinks{
+    color: white;
+    text-decoration: none;
+}
+#tacobell_icon{
+    font-size: 45px;
+    animation: animateTacoBellIcon 150ms linear infinite alternate both;
+}
+/* tacobell landscape responsive codes */
+@media screen and (orientation:landscape){
+    body{
+        background-image: url(../../assets/images/RestaurantBackground.jpg);
+        backdrop-filter: blur(5px) brightness(50%);
+    }
+    #tacobell_header_container{
+        justify-content: space-between;
+    }
+    #tacobell_navigation_bar{
+        font-size: 27px;
+        height: 10vh;
+        flex-direction: row;
+    }
+}
+/* tacobell portrait responsive codes*/
+@media screen and (orientation:portrait){
+    body{
+        background-image: url(../../assets/images/RestaurantBackgroundPortrait.jpg);
+        backdrop-filter: blur(5px) brightness(90%);
+    }
+    #tacobell_header_container{
+        justify-content: center;
+    }
+    #home_logo_container{
+        display: none;
+    }
+    #tacobell_icon_logo_container{
+        position: relative;
+    }
+    #home_icon_container{
+        position: absolute;
+        /* offset properties */
+        top: 10px;
+        right: 10px;
+    }
+    #tacobell_navigation_bar{
+        font-size: 30px;
+        height: 88vh;
+        flex-direction: column;
+    }
+}
+/* animation logics */
+@keyframes animateTacoBellIcon{
+    /* first keyframe */
+    from{
+        transform: rotate(-32deg);
+    }
+    /* last keyframe */
+    to{
+        transform: rotate(-38deg);
+    }
+}

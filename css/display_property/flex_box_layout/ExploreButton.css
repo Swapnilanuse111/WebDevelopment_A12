@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#explore_button{
+    width: 70vw;
+    height: 60vh;
+    background-color: greenyellow;
+    outline: none;
+    border: none;
+    border-radius: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+#explore_content{
+    font-size: 11rem;
+    font-weight: bold;
+}
+#compass_container{
+    width: 20vw;
+    height: 20vw;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#compass_needle_support{
+    width: 2.25vw;
+    height: 2.25vw;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 1;
+}
+#compass_needle{
+    width: 10vw;
+    height: 10vw;
+    background-color: greenyellow;
+    transform: skewX(30deg);
+}
+.compass_tools{
+    position: absolute;
+}
+#explore_button:hover #compass_container{
+    animation: animateCompassContainer 10000ms linear infinite normal both;
+}
+/* animaltion logics */
+@keyframes animateCompassContainer{
+    /* first keyframe */
+    from{
+        transform: rotate(0deg);
+    }
+    /* last keyframe */
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,10 +1,17 @@
+/* 7.background-attachment: scroll(default value) | fixed; */
 body{
     height: 5000px;
+    /* background specific properties */
     background-image: url(../../../assets/images/Sun.png),url(../../../assets/images/Earth.png),url(../../../assets/images/Moon.png),url(../../../assets/images/Asteroid.png),url(../../../assets/images/Space.png);
     background-size: 50%,25%,12.5%,10%,50%;
     background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,repeat;
     background-position: -200px -200px,bottom left,20% 93.5%,center,top left;
     background-attachment: fixed,scroll,scroll,scroll,scroll;
+    /*
+    background shorthand property syntax
+    background: color image size repeat position attachment clip;
+    */
+
 }
 #rocket_image_marquee{
     width: 30%;

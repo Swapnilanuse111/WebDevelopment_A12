@@ -1,57 +1,28 @@
-/* select all the class */
-
-
-
-@font-face {
-    font-family: google-sans;
-    src: url(../../../assets/fonts/Google_sans_Flex.ttf);
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
 }
-
-
-
-.marko{
-    height: 350px;
-    width: 150px;
-    
+#google_doodle_blocks_container{
+    width: fit-content;
 }
-   
-
-
-* {
-    font-size: 200px;
-    font-family: google-sans;
-    
+.google_doodle_blocks{
+    font-size: 150px;
+    font-family: ProductSans;
+    font-weight: bold;
+    float: left;
 }
-
-
-
-#G,#g{
+.royal_blue_texts{
     color: royalblue;
-
-
 }
-
-
-
-#O{
+.red_texts{
     color: red;
-
 }
-
-
-#o{
-
-    color:yellowgreen
+#o_doodle{
+    color: orange;
 }
-
-
-
-#l{
-color: green;
+#l_doodle{
+    color: green;
 }
-
-
-#e{
-    color: red;
-
+.google_doodle_marquees{
+    height: 350px;
 }

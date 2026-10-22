@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+/*
+flex-box layout
+    1.flex-container properties
+        1.1.flex-direction: row(default-value) | column | row-reverse | column-reverse;
+        1.2.row-gap: ;
+        1.3.column-gap: ;
+        1.4.gap: ;
+        1.5.justify-content: flex-start(default-value) | flex-end | center | space-around | space-between | space-evenly;
+        1.6.align-items: stretch(default-value) | flex-start | flex-end | center;
+        1.7.flex-wrap: nowrap(default-value) | wrap | wrap-reverse;
+    2.flex-item properties
+        2.1.flex-grow: growing-factor(0);
+        2.2.flex-basis: ;
+*/
+#course_headings_container{
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 10px;
+}
+.course_headings{
+    padding: 5px;
+    background-color: lightgray;
+}
+#circular_blocks_container{
+    height: 60vh;
+    padding: 10px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.circular_blocks{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+}
+#rectangle_blocks_container{
+    height: 100vh;
+    padding: 10px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rectangle_blocks{
+    height: 100px;
+    background-color: greenyellow;
+}
+#roman_number_headings_container{
+    padding: 10px;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+.roman_number_headings{
+    font-size: 5em;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#roman_number_headings_container:hover>.roman_number_headings:nth-of-type(odd){
+    flex-grow: 1;
+}
+#roman_number_headings_container:hover>.roman_number_headings:nth-of-type(even){
+    flex-grow: 10;
+}
+#square_blocks_container{
+    height: 100vh;
+    padding: 10px;
+    background-color: peachpuff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.square_blocks{
+    width: 100px;
+    flex-basis: 100px;
+    background-color: black;
+}
+#number_headings_container{
+    width: 50%;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.number_headings{
+    font-size: 45px;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    flex-grow: 1;
+}

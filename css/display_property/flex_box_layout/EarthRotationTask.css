@@ -1,0 +1,69 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    overflow: hidden;
+}
+#earth_rotation_tools_container{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.earth_rotation_buttons{
+    width: 300px;
+    height: 300px;
+    font-size: 250px;
+    font-family: ProductSans;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: lightgray;
+    box-shadow: inset 0px 0px 10px gray,inset 0px 0px 30px gray,inset 0px 0px 50px gray;
+    cursor: pointer;
+}
+.earth_rotation_buttons:hover{
+    color: navy;
+}
+.earth_rotation_buttons:hover~#earth_image{
+    transition: transform 1500ms linear;
+}
+#earth_image{
+    width: 300px;
+    position: absolute;
+    /* offset properties */
+    bottom: 10px;
+}
+#x_axis_button:hover~#earth_image{
+    transform: rotateX(360deg);
+}
+#y_axis_button:hover~#earth_image{
+    transform: rotateY(360deg);
+}
+#z_axis_button:hover+#earth_image{
+    animation: animateEarthImage 50000ms linear infinite normal both;
+}
+/* animation logics */
+@keyframes animateEarthImage{
+    /* first keyframe */
+    from{
+        transform: rotate(0deg);
+    }
+    /* last keyframe */
+    to{
+        transform: rotate(360deg);
+    }
+}

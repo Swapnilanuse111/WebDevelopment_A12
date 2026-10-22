@@ -1,0 +1,45 @@
+.bordered_radius_containers{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#circular_bordered_radius_container{
+    background-color: navy;
+    /* one value circular border radius */
+    border-radius: 10%;
+    /* two value circular border radius */
+    border-radius: 0% 50%;
+    /* four value circular border radius */
+    border-radius: 5% 10% 15% 20%;
+}
+#elliptical_bordered_radius_container{
+    background-color: lightgray;
+    /* one value elliptical border radius */
+    border-radius: 10%/50%;
+    /* two value elliptical border radius */
+    border-radius: 10% 50%/50% 10%;
+    /* four value elliptical border radius */
+    border-radius: 10% 30% 50% 70%/70% 50% 30% 10%;
+}
+#square_to_circular_block{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    float: left;
+    border-radius: 50%;
+}
+#rectangle_to_elliptical_block{
+    width: 200px;
+    height: 100px;
+    float: left;
+    background-color: orange;
+    border-radius: 100px/50px;
+}
+#water_droplet_block{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-image: linear-gradient(lightblue,darkblue);
+    border-radius: 0% 100% 46% 54%/0% 54% 46% 100%;
+}
+/* https://9elements.github.io/fancy-border-radius/ */

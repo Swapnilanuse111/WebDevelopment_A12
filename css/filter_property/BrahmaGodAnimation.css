@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#brahma_god_image{
+    cursor: pointer;
+}
+#brahma_god_image:hover{
+    animation: animateBrahmaGodImage 500ms ease-in-out infinite alternate both;
+}
+/* animation logics */
+@keyframes animateBrahmaGodImage{
+    /* first keyframe */
+    from{
+        filter: hue-rotate(0deg);
+    }
+    /* second keyframe */
+    9.09%{
+        filter: hue-rotate(30deg);
+    }
+    /* third keyframe */
+    18.18%{
+        filter: hue-rotate(60deg);
+    }
+    /* fourth keyframe */
+    27.27%{
+        filter: hue-rotate(90deg);
+    }
+    /* fifth keyframe */
+    36.36%{
+        filter: hue-rotate(120deg);
+    }
+    /* sixth keyframe */
+    45.45%{
+        filter: hue-rotate(150deg) grayscale(100%);
+    }
+    /* seventh keyframe */
+    54.54%{
+        filter: hue-rotate(180deg) grayscale(0%);
+    }
+    /* eight keyframe */
+    63.63%{
+        filter: hue-rotate(210deg) grayscale(100%);
+    }
+    /* nineth keyframe */
+    72.72%{
+        filter: hue-rotate(240deg);
+    }
+    /* tenth keyframe */
+    81.81%{
+        filter: hue-rotate(270deg);
+    }
+    /* eleventh keyframe */
+    90.90%{
+        filter: hue-rotate(300deg);
+    }
+    /* last keyframe */
+    to{
+        filter: hue-rotate(330deg);
+    }
+}

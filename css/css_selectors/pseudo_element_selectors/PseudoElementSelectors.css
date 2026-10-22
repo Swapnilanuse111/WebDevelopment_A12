@@ -19,6 +19,11 @@ selector::pseudo-element selector{
 8.-webkit-scrollbar
 9.-webkit-scrollbar-thumb
 10.-webkit-scrollbar-button
+11.-webkit-slider-runnable-track
+12.-webkit-slider-thumb
+13.-webkit-file-upload-button
+14.-webkit-inner-spin-button
+15.-webkit-outer-spin-button
 */
 *{
     padding: 0px;
@@ -143,4 +148,63 @@ body::-webkit-scrollbar-button{
     background-color: gray;
     border-radius: 50%;
     cursor: pointer;
+}
+#brightness_slider{
+    margin-top: 50px;
+    width: 20%;
+    -webkit-appearance: none;
+    outline: none;
+}
+#brightness_slider::-webkit-slider-runnable-track{
+    height: 30px;
+    background-color: navy;
+    border-radius: 15px;
+    -webkit-appearance: none;
+}
+#brightness_slider::-webkit-slider-thumb{
+    width: 30px;
+    height: 100%;
+    background-color: black;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    cursor: pointer;
+}
+#file_input_field{
+    font-size: 30px;
+    margin-top: 20px;
+    outline: none;
+}
+#file_input_field::-webkit-file-upload-button{
+    outline: none;
+    border: none;
+    font-size: 35px;
+    font-family: ProductSans;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: navy;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#file_input_field::-webkit-file-upload-button:active{
+    color: navy;
+    background-color: lightgray;
+}
+#ias_eligibility_age_input_field{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: navy;
+    background-color: lightgray;
+}
+#ias_eligibility_age_input_field::placeholder{
+    color: navy;
+}
+#ias_eligibility_age_input_field::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }

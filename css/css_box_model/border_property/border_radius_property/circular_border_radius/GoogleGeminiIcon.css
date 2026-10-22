@@ -1,0 +1,35 @@
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../../assets/fonts/ProductSansRegular.ttf);
+}
+#google_geminis_container{
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(to bottom right,lightblue,lightpink);
+}
+.google_geminis{
+    width: 50%;
+    height: 50%;
+    float: left;
+    background-color: white;
+}
+#first_google_gemini{
+    border-bottom-right-radius: 100%;
+}
+#second_google_gemini{
+    border-bottom-left-radius: 100%;
+}
+#third_google_gemini{
+    border-top-right-radius: 100%;
+}
+#fourth_google_gemini{
+    border-top-left-radius: 100%;
+}
+#google_gemini_logo{
+    width: fit-content;
+    font-size: 150px;
+    font-family: ProductSans;
+    background-image: linear-gradient(to right,lightblue,lightpink);
+    background-clip: text;
+    color: transparent;
+}

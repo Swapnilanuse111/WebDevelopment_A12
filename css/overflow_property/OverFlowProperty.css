@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#overflow_property_header_container{
+    width: 100%;
+    height: 75px;
+    background-color: peachpuff;
+    padding: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+#web_development_heading{
+    font-size: 40px;
+}
+#web_development_list_container{
+    width: 375px;
+    height: 550px;
+    background-color: rgb(230,230,230);
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#web_development_list_container:hover{
+    overflow: auto;
+}
+#web_development_list_container::-webkit-scrollbar{
+    width: 20px;
+    background-color: rgb(200,200,200);
+    border-radius: 10px;
+}
+#web_development_list_container::-webkit-scrollbar-thumb{
+    background-color: darkgray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#web_development_list_container::-webkit-scrollbar-thumb:hover{
+    background-color: gray;
+}
+#web_development_list_container::-webkit-scrollbar-button{
+    height: 20px;
+    border-radius: 50%;
+    background-color: darkgray;
+    cursor: pointer;
+}
+#web_development_list_container::-webkit-scrollbar-button:active{
+    background-color: gray;
+}
+#web_development_list{
+    margin-top: 20px;
+}
+.web_development_list_items{
+    font-size: 30px;
+    font-weight: bold;
+    list-style-type: none;
+}
+#html_list,#css_list,#java_script_list,#react_java_script_list{
+    font-size: 21px;
+    font-weight: normal;
+    margin-left: 50px;
+}
+.html_list_items:hover,.css_list_items:hover,.java_script_list_items:hover,.react_java_script_list_items:hover{
+    font-weight: bold;
+    background-color: lightgray;
+    transform: scale(1.010);
+}

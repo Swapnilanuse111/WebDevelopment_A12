@@ -1,0 +1,12 @@
+/*
+css rulesets definition
+selector{
+    css-property: css-property-value;
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+*/
+span{
+    font-size: 50px;
+    font-family: sans-serif;
+}

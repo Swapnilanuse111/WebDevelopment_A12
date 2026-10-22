@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#indian_flag_blocks_container{
+    width: 90%;
+    height: 600px;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.indian_flag_blocks{
+    width: 100%;
+    height: 33.3%;
+}
+#orange_color_block{
+    background-color: orange;
+}
+#white_color_block{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#green_color_block{
+    background-color: green;
+}
+#ashoka_chakra_image_element{
+    width: 300px;
+}
+#indian_flag_blocks_container:hover #ashoka_chakra_image_element{
+    animation: animateAshokaChakraImage 50000ms linear infinite normal both,animateAshokaChakraImageFilteration 1500ms ease-in-out infinite alternate both;
+}
+/* animation logics */
+@keyframes animateAshokaChakraImage{
+    /* first keyframe */
+    from{
+        transform: rotate(0deg);
+    }
+    /* last keyframe */
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animateAshokaChakraImageFilteration{
+    /* first keyframe */
+    from{
+        filter: opacity(0%);
+    }
+    /* last keyframe */
+    to{
+        filter: opacity(100%);
+    }
+}
