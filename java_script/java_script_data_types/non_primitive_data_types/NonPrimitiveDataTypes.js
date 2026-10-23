@@ -1,132 +1,54 @@
-
 /*
-========================================
-   JAVASCRIPT NON-PRIMITIVE DATA TYPES
-========================================
-
-Non-primitive data types are used to store
-collections of values or complex data.
-
-Common examples:
-1. Object
-2. Array
-3. Function
-4. Date
-5. Map
-6. Set
-
+non-primitive data types
+        --non-primitive datatypes represents collections of values or multiple data 
+        1.java script object
+        2.java script array obaject
+        3.functions
+        4.NumberObject
+        5.StringObject
+        6.BooleanObject
 */
 
-// ========================================
-// 1. OBJECT
-// ========================================
+/*
+4.NumberObject
+Number(anyValue):number
+new Number(anyValue):Number
+*/
+let number=10;
+let numberObject=new Number(number); //boxing
+console.dir(numberObject,typeof numberObject);
 
-// An object stores data in key-value pairs.
-// We can access values using their keys.
-
-// Example:
-
-let student = {
-    name: "Swapnil",
-    age: 21,
-    city: "Pune"
-};
-
-console.log(student);
-console.log(student.name);
-console.log(student.age);
+let numberPrimitiveValue=numberObject.valueOf();//un-boxing
+console.log(numberPrimitiveValue,typeof numberPrimitiveValue);
 
 
-// ========================================
-// 2. ARRAY
-// ========================================
+/*
+ 5.StringObject
+ String(anyValue):string
+ new String(anyValue):string
+*/
+let StringPrimitiveData="JavaScript";
+let StringObject=new String(StringPrimitiveData);//boxing
+console.dir(StringObject);
+let StringPrimitiveDate=StringObject.valueOf();
+console.log(StringPrimitiveData,typeof StringPrimitiveData);
 
-// An array stores multiple values in one variable.
-// Array indexing starts from 0.
+/*
+6.BooleanObject
 
-// Example:
+Boolean(anyValue):boolean
+new Boolean(anyValue):Boolean
+*/
 
-let fruits = ["Apple", "Mango", "Banana"];
+let booleanPrimitiveData=true;
+let BooleanObject=new Boolean(booleanPrimitiveData);//booxing
+console.dir(BooleanObject)
 
-console.log(fruits);
-console.log(fruits[0]);
-console.log(fruits[1]);
-
-
-// ========================================
-// 3. FUNCTION
-// ========================================
-
-// A function is a reusable block of code.
-// It performs a particular task.
-// We execute a function by calling its name.
-
-// Example:
-
-function greet() {
-    console.log("Hello, Swapnil!");
-}
-
-greet();
+let BooleanPrimitiveData=BooleanObject.valueOf();//unboxing
+console.log(BooleanPrimitiveData,typeof BooleanPrimitiveData)
 
 
-// ========================================
-// 4. DATE OBJECT
-// ========================================
-
-// The Date object is used to work with
-// dates and times.
-
-// Example:
-
-let today = new Date();
-
-console.log(today);
-
-
-// ========================================
-// 5. MAP
-// ========================================
-
-// Map stores data in key-value pairs.
-// Keys can be of different data types.
-// Use set() to add values and get() to access them.
-
-// Example:
-
-let marks = new Map();
-
-marks.set("Math", 85);
-marks.set("English", 90);
-
-console.log(marks);
-console.log(marks.get("Math"));
-
-
-// ========================================
-// 6. SET
-// ========================================
-
-// Set stores unique values.
-// Duplicate values are automatically removed.
-
-// Example:
-
-let numbers = new Set([10, 20, 20, 30, 40]);
-
-console.log(numbers);
-
-
-// ========================================
-// CHECKING TYPES
-// ========================================
-
-// typeof checks the type of a value.
-// Arrays return "object" with typeof.
-// Array.isArray() checks whether a value is an array.
-
-console.log(typeof student);
-console.log(typeof fruits);
-console.log(typeof greet);
-
-console.log(Array.isArray(fruits)); // true
+//non-primitive data types clarity
+console.log(new Number(10),typeof new Number(10));
+console.log(new String("JavaScript"),typeof new String("JavaScript"));
+console.log(new Boolean(true),typeof new Boolean(true))
