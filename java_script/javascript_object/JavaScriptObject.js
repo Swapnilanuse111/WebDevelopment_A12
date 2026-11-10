@@ -106,6 +106,7 @@ realMiMobileObject.getFullDetails = function () {
 
 };
 
+
 console.dir(realMiMobileObject);
 
 document.getElementById("realmi_mobile_object_description").innerHTML =
