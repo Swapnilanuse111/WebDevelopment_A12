@@ -1,3 +1,3 @@
 document.write("ExternalJavaScriptCoding");
-// document object model manipulation
+// dom[document object mode] manipulation
 document.getElementById("topic_heading").textContent="ExternalJavaScriptCoding";

@@ -1,54 +1,49 @@
 /*
 non-primitive data types
-        --non-primitive datatypes represents collections of values or multiple data 
-        1.java script object
-        2.java script array obaject
-        3.functions
-        4.NumberObject
-        5.StringObject
-        6.BooleanObject
+non-primitive data types represents non-fundamental, user-defined, collection of values and properties
+1.new Number(anyValue):NumberObject
+2.new String(anyValue):StringObject
+3.new Boolean(anyValue):BooleanObject
+4.JavaScriptObjects
+5.ArrayObjects
+6.functions
 */
 
-/*
-4.NumberObject
-Number(anyValue):number
-new Number(anyValue):Number
-*/
-let number=10;
-let numberObject=new Number(number); //boxing
+// 1.new Number(anyValue):NumberObject
+let number=10;//primitive data type
+let numberObject=new Number(number);//boxing[non-primitive value]
+let numberPrimitiveValue=numberObject.valueOf();//un-boxing[primitive data type]
 console.dir(numberObject,typeof numberObject);
-
-let numberPrimitiveValue=numberObject.valueOf();//un-boxing
 console.log(numberPrimitiveValue,typeof numberPrimitiveValue);
 
+// 2.new String(anyValue):StringObject
+let string="ExampleWord";
+let stringObject=new String(string);//boxing[non-primitive value]
+let stringPrimitiveValue=stringObject.valueOf();//un-boxing[primitive value]
+console.dir(stringObject,typeof stringObject);
+console.log(stringPrimitiveValue,typeof stringPrimitiveValue);
 
-/*
- 5.StringObject
- String(anyValue):string
- new String(anyValue):string
-*/
-let StringPrimitiveData="JavaScript";
-let StringObject=new String(StringPrimitiveData);//boxing
-console.dir(StringObject);
-let StringPrimitiveDate=StringObject.valueOf();
-console.log(StringPrimitiveData,typeof StringPrimitiveData);
+// 3.new Boolean(anyValue):BooleanObject
+let boolean=false;
+let booleanObject=new Boolean(boolean);//boxing[non-primitive value]
+let booleanPrimitiveValue=booleanObject.valueOf();//un-boxing[primitive value]
+console.dir(booleanObject);
+console.log(booleanPrimitiveValue,typeof booleanPrimitiveValue);
 
-/*
-6.BooleanObject
+// 4.JavaScriptObjects
+let shoeProduct={
+    modelNumber:"SM625",
+    brandName:"SparX",
+    price:"₹2000.00"
+}
+let teeShirtProduct={
+    modelNumber:"6525",
+    brandName:"Jockey",
+    price:"₹575"
+}
+console.dir(shoeProduct,typeof shoeProduct);
+console.dir(teeShirtProduct,typeof teeShirtProduct);
 
-Boolean(anyValue):boolean
-new Boolean(anyValue):Boolean
-*/
-
-let booleanPrimitiveData=true;
-let BooleanObject=new Boolean(booleanPrimitiveData);//booxing
-console.dir(BooleanObject)
-
-let BooleanPrimitiveData=BooleanObject.valueOf();//unboxing
-console.log(BooleanPrimitiveData,typeof BooleanPrimitiveData)
-
-
-//non-primitive data types clarity
-console.log(new Number(10),typeof new Number(10));
-console.log(new String("JavaScript"),typeof new String("JavaScript"));
-console.log(new Boolean(true),typeof new Boolean(true))
+// 5.ArrayObjects
+let amazonCart=[shoeProduct,teeShirtProduct];
+console.dir(amazonCart,typeof amazonCart);

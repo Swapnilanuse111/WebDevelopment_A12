@@ -1,75 +1,64 @@
 /*
-JavaScript Data Types
-
-1. What are Data Types?
-
-Data types define the type of value a variable stores in JavaScript.
-
-JavaScript data types are divided into two main categories:
-
-Primitive Data Types
-
-Non-Primitive (Reference) Data Types
-
-2. Primitive Data Types
-
-Primitive data types store simple, single values.
-
-JavaScript has 7 primitive data types.
-
-1. Number
-
-Used to store integers and decimal numbers.
+primitive data types
+primitive data types represents a fundamental or basic or primitive single value.
+1.number
+2.string
+3.boolean
+4.undefined
+5.null
+6.bigint
+7.symbol
 */
-let age = 21;
-let price = 99.50;
+// 1.number
+let countOfEggs=5;
+console.log(countOfEggs,typeof countOfEggs);
+let academicCGPA=8.67;
+console.log(academicCGPA,typeof academicCGPA);
 
-console.log(age);
-console.log(price);
+// 2.string
+let studentName="Atharvaa";
+console.log(studentName,typeof studentName);
+let enrolledCourseName='JavaFullStack';
+console.log(enrolledCourseName,typeof enrolledCourseName);
 
-//2. String
-        //Used to store text inside quotes.
+// 3.boolean
+let isAtharvaaPresent=false;
+console.log(isAtharvaaPresent,typeof isAtharvaaPresent);
+let isAtharvaaAbsent=true;
+console.log(isAtharvaaAbsent,typeof isAtharvaaAbsent);
 
-let name = "Swapnil";
-let city = 'Pune';
+// 4.undefined
+let laptopBrandName;//declaration
+console.log(laptopBrandName,typeof laptopBrandName);
+let mobileBrandName=undefined;
+console.log(mobileBrandName,typeof mobileBrandName);
 
-console.log(name);
-console.log(city);
+// 5.null
+let username=null;
+console.log(username,typeof username);
+let password=null;
+console.log(password,typeof password);
 
-//3. Boolean
-        //Stores either true or false.
+// 6.bigint
+let phonePeTransactionID=90071992547409910n;
+console.log(phonePeTransactionID,typeof phonePeTransactionID);
+let googlePayTransactionID=BigInt(9007199254740993n);
+console.log(googlePayTransactionID,typeof googlePayTransactionID);
 
-let isStudent = true;
-let isLoggedIn = false;
+// 7.symbol
+const employeeID=Symbol("employeeID");
+let employeeDetails={
+    employeeID:1701,
+    [employeeID]:1702
+}
+console.log(employeeDetails.employeeID);
+console.log(employeeDetails[employeeID]);
 
-console.log(isStudent);
-console.log(isLoggedIn);
-
-//4. Undefined
-//A variable that has been declared but not assigned a value.
-
-let result;
-
-console.log(result); // undefined
-
-//5. Null
-        //Represents an intentional absence of a value.
-
-let selectedValue = null;
-
-console.log(selectedValue); // null
-
-// 6. BigInt
-// Used to represent integers larger than the safe integer range of the Number type.
-
-let bigNumber = 12345678901234567890n;
-
-console.log(bigNumber);
-
-// 7. Symbol
-    // Used to create unique identifiers.
-
-let id1 = Symbol("id");
-let id2 = Symbol("id");
-
-console.log(id1 === id2); // false
+// primitive data-types clarity
+console.log(10==10);
+console.log(10.5==10.5);
+console.log("Java"=='Java');
+console.log(true==false);
+console.log(undefined==null);
+console.log(phonePeTransactionID==googlePayTransactionID);
+console.log(Symbol("username")==Symbol("username"));
